@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectDbAspNet", "ConnectDbAspNet\ConnectDbAspNet.csproj", "{9687730A-98B1-4649-8277-00D7F102855C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9687730A-98B1-4649-8277-00D7F102855C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9687730A-98B1-4649-8277-00D7F102855C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9687730A-98B1-4649-8277-00D7F102855C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9687730A-98B1-4649-8277-00D7F102855C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D50B9919-A5B0-4EBE-AAEF-8DEACE5B67DA}
+	EndGlobalSection
+EndGlobal

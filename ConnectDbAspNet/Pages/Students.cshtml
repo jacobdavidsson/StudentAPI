@@ -1,0 +1,29 @@
+﻿@page
+@model ConnectDbAspNet.Pages.StudentsModel
+@{
+}
+
+<a class="btn btn-primary btm-sm" asp-page="/Create">Add Person</a>
+
+<table class="table">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Enrollment Date</th>
+        </tr>
+    @foreach (var student in Model.Students)
+    {
+        <tr>
+            <td>@student.Id</td>
+            <td>@student.Name</td>
+            <td>@student.EnrollmentDate.ToString("yyyy-MM-dd")</td>
+            <td><a class="btn btn-primary btn-sm" asp-page="/Update" asp-route-id="@student.Id">Update</a></td>
+            <td>
+            <form method="post">
+                <button class="btn btn-danger btn-sm" asp-page-handler="Delete" asp-route-id="@student.Id" onclick="return confirm('Are you sure?')">Delete</button>
+            </form>
+            </td>
+        </tr>
+    }
+</table>
+

@@ -1,0 +1,27 @@
+﻿@page
+@model ConnectDbAspNet.Pages.UpdateModel
+@{
+}
+
+<p>Update Student</p>
+
+<form method="post">
+    <input type="hidden" asp-for="@Model.Student.Id" />
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label" asp-for="@Model.Student.Name"></label>
+        <div class="col-sm-6">
+            <input asp-for="@Model.Student.Name" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label" asp-for="@Model.Student.EnrollmentDate"></label>
+        <div class="col-sm-6">
+            <input asp-for="@Model.Student.EnrollmentDate" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button class="btn btn-primary" type="submit">Update Student</button>
+        </div>
+    </div>
+</form>
