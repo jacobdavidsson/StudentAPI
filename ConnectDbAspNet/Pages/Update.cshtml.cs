@@ -32,6 +32,7 @@ namespace ConnectDbAspNet.Pages
                 updatedStudent.EnrollmentDate = Student.EnrollmentDate;
 
                 _context.SaveChanges();
+
                 return RedirectToPage("/Students");
             }
             return Page();
