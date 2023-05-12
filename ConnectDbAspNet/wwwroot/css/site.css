@@ -17,7 +17,14 @@ body {
   margin-bottom: 60px;
 }
 
-.test {
-  width: 100px;
-  height: 100px;
+aside {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    bottom: 100px;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    min-height: 700px;
 }
+

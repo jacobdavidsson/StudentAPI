@@ -20,7 +20,7 @@
             <td><a class="btn btn-primary btn-sm" asp-page="/Update" asp-route-id="@student.Id">Update</a></td>
             <td>
             <form method="post">
-                <button class="btn btn-danger btn-sm" asp-page-handler="Delete" asp-route-id="@student.Id" onclick="return confirm('Are you sure?')">Delete</button>
+                <button class="btn btn-danger btn-sm" asp-page-handler="Delete" asp-route-id="@student.Id">Delete</button>
             </form>
             </td>
         </tr>

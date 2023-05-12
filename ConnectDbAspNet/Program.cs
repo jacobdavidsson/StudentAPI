@@ -16,8 +16,8 @@ namespace ConnectDbAspNet
 
             builder.Services.AddDbContext<SchoolContext>(options =>
             {
-                // Ändra till din lokala databas och kör update-database i package manager console
-                options.UseSqlServer("Server=(localdb)\\jdlocal;Database=SchoolDB;Trusted_Connection=True;");
+                // Ändra till din server i sql server och kör update-database i package manager console
+                options.UseSqlServer("Server=(localdb)\\jdlocal;Database=SchoolDB;Trusted_Connection=True;TrustServerCertificate=True;");
             });
 
             var app = builder.Build();

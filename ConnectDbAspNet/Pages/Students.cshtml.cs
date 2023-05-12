@@ -25,6 +25,7 @@ namespace ConnectDbAspNet.Pages
             Student studentToDelete = _context.Students.Find(id);
             _context.Remove(studentToDelete);
             _context.SaveChanges();
+
             return RedirectToPage("/Students");
         }
     }
