@@ -48,6 +48,12 @@
             </div>
         </div>
     </div>
+    <p id="currentDateTime"></p>
+    <script>
+      var dateTime = document.getElementById("currentDateTime");
+      var currentDateTime = new Date().toLocaleString();
+      dateTime.textContent = "Current Date and Time: " + currentDateTime;
+    </script>
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - Student Registry
